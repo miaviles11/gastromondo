@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Camera, ChevronRight, Star } from "lucide-react"
+import { ChevronRight, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import MobileNav from "../components/mobile-nav"
@@ -12,7 +12,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image src="/logo.png" alt="Gastro Mondo Logo" width={40} height={40} />
+            <Image src="/logo.svg" alt="Gastro Mondo Logo" width={40} height={40} />
             <Link href="/" className="text-xl font-bold">
               Gastro Mondo
             </Link>
@@ -395,7 +395,7 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div>
               <div className="flex items-center gap-2">
-                <Camera className="h-6 w-6 text-primary" />
+                <Image src="/logo.svg" alt="Gastro Mondo Logo" width={40} height={40} />
                 <span className="text-xl font-bold">Gastro Mondo</span>
               </div>
               <p className="font-body mt-4 text-sm text-muted-foreground">
