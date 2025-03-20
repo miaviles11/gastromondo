@@ -31,7 +31,7 @@ export default function Precios() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Button asChild className="hidden md:inline-flex bg-primary text-black">
+            <Button asChild className="hidden md:inline-flex bg-primary text-white">
               <Link href="/contacto">Contactar</Link>
             </Button>
             <MobileNav />
@@ -89,7 +89,7 @@ export default function Precios() {
                       <span>Entrega en 5 días laborables</span>
                     </li>
                   </ul>
-                  <Button asChild className="mt-6 w-full bg-primary text-black">
+                  <Button asChild className="mt-6 w-full bg-primary text-white">
                     <Link href="/contacto">Solicitar presupuesto</Link>
                   </Button>
                 </CardContent>
@@ -131,7 +131,7 @@ export default function Precios() {
                       <span>Entrega en 3 días laborables</span>
                     </li>
                   </ul>
-                  <Button asChild className="mt-6 w-full bg-primary text-black">
+                  <Button asChild className="mt-6 w-full bg-primary text-white">
                     <Link href="/contacto">Solicitar presupuesto</Link>
                   </Button>
                 </CardContent>
@@ -174,7 +174,7 @@ export default function Precios() {
                       <span>Entrega en 48 horas</span>
                     </li>
                   </ul>
-                  <Button asChild className="mt-6 w-full bg-primary text-black">
+                  <Button asChild className="mt-6 w-full bg-primary text-white">
                     <Link href="/contacto">Solicitar presupuesto</Link>
                   </Button>
                 </CardContent>

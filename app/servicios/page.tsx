@@ -52,19 +52,19 @@ export default function Servicios() {
                 Una selección de proyectos fotográficos realizados para restaurantes y marcas del sector gastronómico.
               </p>
               <div className="mt-6 flex flex-wrap justify-center gap-4">
-                <Button variant="outline" size="sm" className="rounded-full bg-primary text-black">
+                <Button variant="outline" size="sm" className="rounded-full bg-primary text-white">
                   Todos
                 </Button>
-                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-black">
+                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-white">
                   Restaurantes
                 </Button>
-                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-black">
+                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-white">
                   Menús
                 </Button>
-                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-black">
+                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-white">
                   Productos
                 </Button>
-                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-black">
+                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-white">
                   Editorial
                 </Button>
               </div>
@@ -77,19 +77,19 @@ export default function Servicios() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                { title: "Restaurante Alma", category: "Ambiente", description: "Fotografía de interiores y platos" },
-                { title: "Menú Degustación", category: "Menú", description: "Serie completa de 7 platos" },
-                { title: "Pastelería Dulce", category: "Producto", description: "Colección de postres artesanales" },
-                { title: "Revista Gourmet", category: "Editorial", description: "Reportaje gastronómico" },
-                { title: "Cocina Mediterránea", category: "Menú", description: "Especialidades de temporada" },
-                { title: "Bar Craft", category: "Ambiente", description: "Coctelería y ambiente nocturno" },
-                { title: "Panadería Artesanal", category: "Producto", description: "Proceso de elaboración del pan" },
-                { title: "Restaurante Fusión", category: "Ambiente", description: "Espacio y concepto gastronómico" },
-                { title: "Cafetería Botánica", category: "Ambiente", description: "Espacio y productos de café" },
+                { title: "Restaurante Alma", category: "Ambiente", description: "Fotografía de interiores y platos", image: "/1.jpeg" },
+                { title: "Menú Degustación", category: "Menú", description: "Serie completa de 7 platos", image: "/2.jpeg" },
+                { title: "Pastelería Dulce", category: "Producto", description: "Colección de postres artesanales", image: "/3.jpeg" },
+                { title: "Revista Gourmet", category: "Editorial", description: "Reportaje gastronómico", image: "/5.jpeg" },
+                { title: "Cocina Mediterránea", category: "Menú", description: "Especialidades de temporada", image: "/WhatsApp Image 2025-03-20 at 22.25.32.jpeg" },
+                { title: "Bar Craft", category: "Ambiente", description: "Coctelería y ambiente nocturno", image: "/WhatsApp Image 2025-03-20 at 22.29.04 (1).jpeg" },
+                { title: "Panadería Artesanal", category: "Producto", description: "Proceso de elaboración del pan", image: "/WhatsApp Image 2025-03-20 at 22.29.04 (2).jpeg" },
+                { title: "Restaurante Fusión", category: "Ambiente", description: "Espacio y concepto gastronómico", image: "/WhatsApp Image 2025-03-20 at 22.29.04 (3).jpeg" },
+                { title: "Cafetería Botánica", category: "Ambiente", description: "Espacio y productos de café", image: "/WhatsApp Image 2025-03-20 at 22.29.04 (4).jpeg" },
               ].map((item, index) => (
                 <div key={index} className="group relative overflow-hidden rounded-lg">
                   <Image
-                    src={`/placeholder.svg?height=400&width=600`}
+                    src={item.image}
                     alt={item.title}
                     width={600}
                     height={400}
@@ -131,21 +131,21 @@ export default function Servicios() {
                   title: "Restaurante Estrella Michelin",
                   description:
                     "Fotografía completa para el relanzamiento del restaurante, incluyendo ambiente, menú y equipo.",
-                  image: "/placeholder.svg?height=600&width=1200",
+                  image: "/WhatsApp Image 2025-03-20 at 22.25.32 (3).jpeg",
                   reverse: false,
                 },
                 {
                   title: "Libro de Cocina Mediterránea",
                   description:
                     "Más de 50 fotografías para un libro de recetas de cocina mediterránea publicado internacionalmente.",
-                  image: "/placeholder.svg?height=600&width=1200",
+                  image: "/WhatsApp Image 2025-03-20 at 22.25.32 (5).jpeg",
                   reverse: true,
                 },
                 {
                   title: "Campaña para Marca de Productos Gourmet",
                   description:
                     "Serie fotográfica para campaña publicitaria de una reconocida marca de productos gourmet.",
-                  image: "/placeholder.svg?height=600&width=1200",
+                  image: "/bg.jpeg",
                   reverse: false,
                 },
               ].map((project, index) => (
@@ -156,7 +156,7 @@ export default function Servicios() {
                   <div className={project.reverse ? "md:col-start-2" : ""}>
                     <div className="overflow-hidden rounded-lg">
                       <Image
-                        src={project.image || "/placeholder.svg"}
+                        src={project.image}
                         alt={project.title}
                         width={1200}
                         height={600}
@@ -168,7 +168,7 @@ export default function Servicios() {
                     <h3 className="text-2xl font-bold font-subtitle text-black">{project.title}</h3>
                     <p className="text-muted-foreground font-body text-black">{project.description}</p>
                     <div className="pt-4">
-                      <Button asChild className="bg-primary text-black">
+                      <Button asChild className="bg-primary text-white">
                         <Link href="#">Ver proyecto completo</Link>
                       </Button>
                     </div>

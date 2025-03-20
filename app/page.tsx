@@ -12,9 +12,8 @@ export default function Home() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image src="/logo.svg" alt="Gastro Mondo Logo" width={40} height={40} />
             <Link href="/" className="text-xl font-bold">
-              Gastro Mondo
+				<Image src="/logo.svg" alt="Gastro Mondo Logo" width={40} height={40} />
             </Link>
           </div>
           <nav className="hidden md:flex gap-6">
@@ -44,7 +43,7 @@ export default function Home() {
       <div className="relative w-full">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/bg.jpeg?height=800&width=1920"
+            src="/bg.jpg?height=800&width=1920"
             alt="Fondo gastronómico"
             fill
             className="object-cover"
@@ -59,7 +58,7 @@ export default function Home() {
         <section id="inicio" className="relative">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/bg.jpeg?height=800&width=1920"
+              src="/bg.jpg?height=700&width=1920"
               alt="Fotografía gastronómica profesional"
               fill
               className="object-cover brightness-50"
@@ -396,7 +395,7 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2">
                 <Image src="/logo.svg" alt="Gastro Mondo Logo" width={40} height={40} />
-                <span className="text-xl font-bold">Gastro Mondo</span>
+                <span className="text-xl font-bold"></span>
               </div>
               <p className="font-body mt-4 text-sm text-muted-foreground">
                 Fotografía gastronómica profesional para restaurantes, chefs y empresas del sector alimentario.

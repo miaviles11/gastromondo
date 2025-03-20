@@ -33,7 +33,7 @@ export default function Contacto() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Button asChild className="hidden md:inline-flex bg-primary text-black">
+            <Button asChild className="hidden md:inline-flex bg-primary text-white">
               <Link href="/contacto">Contactar</Link>
             </Button>
             <MobileNav />
@@ -348,102 +348,6 @@ export default function Contacto() {
           </div>
         </section>
 
-        {/* Map or Location Section */}
-        <section className="py-16 md:py-24">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Ubicación</div>
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl font-title">Dónde encontrarme</h2>
-              <p className="max-w-[700px] text-muted-foreground md:text-lg font-body">
-                Mi estudio está ubicado en el centro de Barcelona, con fácil acceso en transporte público.
-              </p>
-            </div>
-            <div className="mt-8 overflow-hidden rounded-lg border">
-              <div className="aspect-video w-full">
-                <Image
-                  src="/placeholder.svg?height=600&width=1200"
-                  alt="Mapa de ubicación"
-                  width={1200}
-                  height={600}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="mt-8 grid gap-8 md:grid-cols-3">
-              <Card>
-                <CardContent className="flex flex-col items-center p-6 text-center">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3">
-                    <MapPin className="h-6 w-6 text-secondary" />
-                  </div>
-                  <h3 className="text-xl font-bold font-subtitle">Dirección</h3>
-                  <p className="mt-2 text-sm text-muted-foreground font-body">
-                    Calle Ejemplo, 123
-                    <br />
-                    08001 Barcelona
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="flex flex-col items-center p-6 text-center">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-6 w-6 text-secondary"
-                    >
-                      <path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
-                      <path d="M15 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" />
-                      <path d="M9 21a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
-                      <path d="M15 21a4 4 0 1 0 0-8 4 4 0 0 0 0-8Z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold font-subtitle">Transporte</h3>
-                  <p className="mt-2 text-sm text-muted-foreground font-body">
-                    Metro: Línea 3 (Estación Ejemplo)
-                    <br />
-                    Bus: Líneas 45, 47, 120
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="flex flex-col items-center p-6 text-center">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-6 w-6 text-secondary"
-                    >
-                      <rect width="18" height="18" x="3" y="3" rx="2" />
-                      <path d="M3 9h18" />
-                      <path d="M9 21V9" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold font-subtitle">Aparcamiento</h3>
-                  <p className="mt-2 text-sm text-muted-foreground font-body">
-                    Parking público a 100m
-                    <br />
-                    Zona azul disponible en la calle
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-      </main>
 
       {/* Footer */}
       <footer className="border-t bg-background py-6 md:py-10">
