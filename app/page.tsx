@@ -12,7 +12,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Camera className="h-6 w-6 text-primary" />
+            <Image src="/logo.png" alt="Gastro Mondo Logo" width={40} height={40} />
             <Link href="/" className="text-xl font-bold">
               Gastro Mondo
             </Link>
@@ -59,7 +59,7 @@ export default function Home() {
         <section id="inicio" className="relative">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/placeholder.svg?height=800&width=1920"
+              src="/bg.jpeg?height=800&width=1920"
               alt="Fotografía gastronómica profesional"
               fill
               className="object-cover brightness-50"
@@ -159,7 +159,7 @@ export default function Home() {
               <Card className="overflow-hidden border-0 shadow-lg">
                 <div className="relative h-48 w-full overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/WhatsApp Image 2025-03-20 at 22.29.04 (2).jpeg?height=400&width=600"
                     alt="Fotografía de Menús"
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-105"
@@ -190,7 +190,7 @@ export default function Home() {
               <Card className="overflow-hidden border-0 shadow-lg">
                 <div className="relative h-48 w-full overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/WhatsApp Image 2025-03-20 at 22.30.27.jpeg?height=400&width=600"
                     alt="Fotografía para Redes Sociales"
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-105"
@@ -221,7 +221,7 @@ export default function Home() {
               <Card className="overflow-hidden border-0 shadow-lg">
                 <div className="relative h-48 w-full overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/WhatsApp Image 2025-03-20 at 22.29.05 (7).jpeg?height=400&width=600"
                     alt="Fotografía de Ambientes"
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-105"
