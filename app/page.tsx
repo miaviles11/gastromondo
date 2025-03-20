@@ -95,7 +95,7 @@ export default function Home() {
             <div className="grid gap-10 md:grid-cols-2 md:gap-16">
               <div>
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="/Me.jpg?height=600&width=600"
                   alt="Fotógrafo profesional"
                   width={600}
                   height={600}
