@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 140 14% 19%; /* Verde oscuro */
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 14% 19%; /* Verde oscuro */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 14% 19%; /* Verde oscuro */
+
+    --primary: 140 14% 19%; /* Verde oscuro */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 8 88% 54%; /* Rojo anaranjado */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 60 3% 88%; /* Gris claro */
+    --muted-foreground: 140 14% 19%; /* Verde oscuro */
+
+    --accent: 60 3% 88%; /* Gris claro */
+    --accent-foreground: 140 14% 19%; /* Verde oscuro */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 14% 19%; /* Verde oscuro */
+    --input: 140 14% 19%; /* Verde oscuro */
+    --ring: 140 14% 19%; /* Verde oscuro */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 140 14% 19%; /* Verde oscuro */
+    --foreground: 0 0% 98%;
+
+    --card: 140 14% 19%; /* Verde oscuro */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 140 14% 19%; /* Verde oscuro */
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 140 14% 19%; /* Verde oscuro */
+
+    --secondary: 8 88% 54%; /* Rojo anaranjado */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 140 14% 30%; /* Verde oscuro más claro */
+    --muted-foreground: 0 0% 98%;
+
+    --accent: 140 14% 30%; /* Verde oscuro más claro */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 14% 30%; /* Verde oscuro más claro */
+    --input: 140 14% 30%; /* Verde oscuro más claro */
+    --ring: 8 88% 54%; /* Rojo anaranjado */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-open-sans;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-oswald;
+  }
+  h1,
+  h2 {
+    @apply font-bold;
+  }
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  .btn {
+    @apply font-normal;
+  }
+}
+
+/* Clases de utilidad para aplicar las fuentes específicas */
+.font-title {
+  @apply font-oswald font-bold;
+}
+
+.font-subtitle {
+  @apply font-oswald font-normal;
+}
+
+.font-body {
+  @apply font-open-sans font-normal;
+}
+
+/* Clases para los colores personalizados */
+.bg-verde-oscuro {
+  background-color: #29392e;
+}
+
+.text-verde-oscuro {
+  color: #29392e;
+}
+
+.bg-rojo-anaranjado {
+  background-color: #f03d22;
+}
+
+.text-rojo-anaranjado {
+  color: #f03d22;
+}
+
+.bg-gris-claro {
+  background-color: #e0e1de;
+}
+
+.text-gris-claro {
+  color: #e0e1de;
+}
+
+.bg-negro {
+  background-color: #010101;
+}
+
+.text-negro {
+  color: #010101;
+}
+
