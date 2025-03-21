@@ -41,7 +41,7 @@ export default function Contacto() {
         </div>
       </header>
 
-	<main className="flex-1"></main>
+      <main className="flex-1"></main>
 
       {/* Footer */}
       <footer className="border-t bg-background py-6 md:py-10">
