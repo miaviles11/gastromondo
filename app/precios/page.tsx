@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { Camera, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
