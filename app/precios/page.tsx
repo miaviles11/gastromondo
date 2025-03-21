@@ -11,9 +11,8 @@ export default function Precios() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Camera className="h-6 w-6 text-primary" />
-            <Link href="/" className="text-xl font-bold">
-              Gastro Mondo
+		  	<Link href="/" className="text-xl font-bold">
+				<Image src="/logo.svg" alt="Gastro Mondo Logo" width={40} height={40} />
             </Link>
           </div>
           <nav className="hidden md:flex gap-6">

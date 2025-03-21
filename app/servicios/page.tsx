@@ -11,9 +11,8 @@ export default function Servicios() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Camera className="h-6 w-6 text-primary" />
-            <Link href="/" className="text-xl font-bold">
-              Gastro Mondo
+		  	<Link href="/" className="text-xl font-bold">
+				<Image src="/logo.svg" alt="Gastro Mondo Logo" width={40} height={40} />
             </Link>
           </div>
           <nav className="hidden md:flex gap-6">
@@ -131,21 +130,21 @@ export default function Servicios() {
                   title: "Restaurante Estrella Michelin",
                   description:
                     "Fotografía completa para el relanzamiento del restaurante, incluyendo ambiente, menú y equipo.",
-                  image: "/WhatsApp Image 2025-03-20 at 22.25.32 (3).jpeg",
+                  image: "/mich.jpg",
                   reverse: false,
                 },
                 {
                   title: "Libro de Cocina Mediterránea",
                   description:
                     "Más de 50 fotografías para un libro de recetas de cocina mediterránea publicado internacionalmente.",
-                  image: "/WhatsApp Image 2025-03-20 at 22.25.32 (5).jpeg",
+                  image: "/medi.jpg",
                   reverse: true,
                 },
                 {
                   title: "Campaña para Marca de Productos Gourmet",
                   description:
                     "Serie fotográfica para campaña publicitaria de una reconocida marca de productos gourmet.",
-                  image: "/bg.jpeg",
+                  image: "/gourmet.jpg",
                   reverse: false,
                 },
               ].map((project, index) => (
