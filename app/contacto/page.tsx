@@ -41,7 +41,77 @@ export default function Contacto() {
         </div>
       </header>
 
-      <main className="flex-1"></main>
+      <main className="flex-1">
+        <section className="container mx-auto px-4 py-16">
+          <h1 className="text-3xl font-bold text-center mb-8">Contáctanos</h1>
+          <p className="text-center text-muted-foreground mb-12">
+            Si tienes alguna pregunta o deseas más información, no dudes en ponerte en contacto con nosotros.
+          </p>
+          <div className="grid gap-8 md:grid-cols-2">
+            {/* Información de contacto */}
+            <div>
+              <h2 className="text-xl font-semibold mb-4">Información de contacto</h2>
+              <ul className="space-y-4">
+                <li className="flex items-center gap-2">
+                  <Phone className="h-5 w-5 text-primary" />
+                  <span>+34 600 123 446</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Mail className="h-5 w-5 text-primary" />
+                  <span>info@gastromondo.com</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <MapPin className="h-5 w-5 text-primary" />
+                  <span>Barcelona, España</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Formulario de contacto */}
+            <div>
+              <h2 className="text-xl font-semibold mb-4">Envíanos un mensaje</h2>
+              <form className="space-y-4">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium">
+                    Nombre
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary focus:ring-primary"
+                    placeholder="Tu nombre"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium">
+                    Correo electrónico
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary focus:ring-primary"
+                    placeholder="Tu correo electrónico"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium">
+                    Mensaje
+                  </label>
+                  <textarea
+                    id="message"
+                    rows={4}
+                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary focus:ring-primary"
+                    placeholder="Escribe tu mensaje aquí"
+                  ></textarea>
+                </div>
+                <Button type="submit" className="w-full bg-primary text-white">
+                  Enviar mensaje
+                </Button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
 
       {/* Footer */}
       <footer className="border-t bg-background py-6 md:py-10">

@@ -31,7 +31,7 @@ export default function Servicios() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Button asChild className="hidden md:inline-flex bg-primary text-black">
+            <Button asChild className="hidden md:inline-flex bg-primary text-white">
               <Link href="/contacto">Contactar</Link>
             </Button>
             <MobileNav />
@@ -55,16 +55,16 @@ export default function Servicios() {
                 <Button variant="outline" size="sm" className="rounded-full bg-primary text-white">
                   Todos
                 </Button>
-                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-white">
+                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-black">
                   Restaurantes
                 </Button>
-                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-white">
+                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-black">
                   Menús
                 </Button>
-                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-white">
+                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-black">
                   Productos
                 </Button>
-                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-white">
+                <Button variant="ghost" size="sm" className="rounded-full bg-tertiary text-black">
                   Editorial
                 </Button>
               </div>
@@ -154,13 +154,13 @@ export default function Servicios() {
                   className={`grid gap-8 items-center ${project.reverse ? "md:grid-cols-2 md:grid-flow-dense" : "md:grid-cols-2"}`}
                 >
                   <div className={project.reverse ? "md:col-start-2" : ""}>
-                    <div className="overflow-hidden rounded-lg">
+                    <div className="overflow-hidden rounded-lg max-h-[400px]">
                       <Image
                         src={project.image}
                         alt={project.title}
                         width={1200}
                         height={600}
-                        className="w-full transition-transform duration-500 hover:scale-105"
+                        className="w-full h-full object-cover"
                       />
                     </div>
                   </div>
