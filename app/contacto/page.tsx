@@ -115,7 +115,7 @@ export default function Contacto() {
               <h3 className="mb-4 text-lg font-medium font-subtitle">Contacto</h3>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
-                  <span className="text-sm text-muted-foreground font-body">+34 600 123 456</span>
+                  <span className="text-sm text-muted-foreground font-body">+34 600 123 446</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-sm text-muted-foreground font-body">info@gastromondo.com</span>
